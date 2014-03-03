@@ -28,3 +28,7 @@ endif()
 #clang 3.1 requires -fexceptions, but clang 3.2 requires -fno-rtti (I guess it depends on how it has been compiled)
 SET(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -fno-rtti")
 #SET(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -fexceptions")
+
+install(TARGETS codebrowser_generator RUNTIME DESTINATION bin)
+install(PROGRAMS ${CMAKE_CURRENT_SOURCE_DIR}/../scripts/fake_compiler.sh DESTINATION lib/woboq-codebrowser)
+install(DIRECTORY ${CMAKE_CURRENT_SOURCE_DIR}/../data DESTINATION share/woboq-codebrowser)

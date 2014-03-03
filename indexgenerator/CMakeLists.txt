@@ -12,3 +12,5 @@ IF (APPLE)
     SET(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -stdlib=libc++")
     SET(CMAKE_EXE_LINKER_FLAGS "${CMAKE_EXE_LINKER_FLAGS}  -stdlib=libc++" )
 ENDIF()
+
+install(TARGETS codebrowser_indexgenerator RUNTIME DESTINATION bin)
