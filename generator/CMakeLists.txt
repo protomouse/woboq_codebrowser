@@ -18,7 +18,7 @@ target_link_libraries(codebrowser_generator  ${CLANG_LIBS} ${LLVM_LIBS_CORE} ${L
 
 
 ADD_DEFINITIONS("-std=c++11") 
-SET(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} ${LLVM_COMPILE_FLAGS} -std=c++11 -g")
+SET(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} ${LLVM_COMPILE_FLAGS} -std=c++11")
 
 if (APPLE)
     SET(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS}  -stdlib=libc++ ")

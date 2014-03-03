@@ -6,7 +6,7 @@ add_executable(codebrowser_indexgenerator indexer.cpp)
 target_link_libraries(codebrowser_indexgenerator)
 
 ADD_DEFINITIONS("-std=c++11")
-SET(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -std=c++11 -g")
+SET(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -std=c++11")
 
 IF (APPLE)
     SET(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -stdlib=libc++")
