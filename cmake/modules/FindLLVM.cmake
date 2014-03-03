@@ -18,7 +18,7 @@ if (LLVM_INCLUDE_DIR)
 else (LLVM_INCLUDE_DIR)
 
 find_program(LLVM_CONFIG_EXECUTABLE
-  NAMES llvm-config
+  NAMES llvm-config-3.5 llvm-config-3.4 llvm-config-3.3 llvm-config-3.2 llvm-config-3.1 llvm-config
   PATHS
   /opt/local/bin
 )
